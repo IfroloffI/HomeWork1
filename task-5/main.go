@@ -8,6 +8,6 @@ import (
 func main() {
 	var str string
 	fmt.Scan(&str)
-	str = strings.Replace(str, "1", "one", -1)
+	str = strings.ReplaceAll(str, "1", "one")
 	fmt.Println(str)
 }

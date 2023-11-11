@@ -6,8 +6,7 @@ import (
 )
 
 func main() {
-	var a, b int
+	var a, b float64
 	fmt.Scan(&a, &b)
-	c := math.Sqrt(float64(a*a + b*b))
-	fmt.Println(c)
+	fmt.Println(math.Hypot(a, b))
 }

@@ -5,15 +5,14 @@ import (
 )
 
 func main() {
-	var len, number int
-	fmt.Scan(&len)
-	var arr []int
-	for i := 0; i < len; i++ {
-		fmt.Scan(&number)
-		arr = append(arr, number)
+	var size int
+	fmt.Scan(&size)
+	arr := make([]int, size)
+	for i := 0; i < size; i++ {
+		fmt.Scan(&arr[i])
 	}
-	first := arr[len-1]
-	for i := len - 1; i > 0; i-- {
+	first := arr[size-1]
+	for i := size - 1; i > 0; i-- {
 		arr[i] = arr[i-1]
 	}
 	arr[0] = first
